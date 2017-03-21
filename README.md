@@ -4,12 +4,13 @@
 * [django](http://djangoproject.jp)
 * [django-rest-framework](http://www.django-rest-framework.org)
 * [Django REST Frameworkを使って爆速でAPIを実装する](http://qiita.com/kimihiro_n/items/86e0a9e619720e57ecd8)
+* [django-rest-swagger](https://django-rest-swagger.readthedocs.io/en/latest/)
 
 ## create process
 
 ```sh
 python -V # 3.5.3
-pip install django djangorestframework django-filter
+pip install django djangorestframework django-filter django-rest-swagger
 django-admin startproject django_rest_api && cd django_rest_api
 python manage.py migrate
 python manage.py createsuperuser

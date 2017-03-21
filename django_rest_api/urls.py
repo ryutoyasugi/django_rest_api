@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from rest_framework_swagger.views import get_swagger_view
 
 from blog.urls import router as blog_router
+
+schema_view = get_swagger_view(title='Sample API')
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(blog_router.urls)),
+    url(r'^$', schema_view)
 ]
