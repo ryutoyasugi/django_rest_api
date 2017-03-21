@@ -14,9 +14,11 @@ class User(models.Model):
 class Entry(models.Model):
     STATUS_DRAFT = "draft"
     STATUS_PUBLIC = "public"
+    STATUS_PRIVATE = "private"
     STATUS_SET = (
         (STATUS_DRAFT, "下書き"),
         (STATUS_PUBLIC, "公開中"),
+        (STATUS_PRIVATE, "非公開"),
     )
     title = models.CharField(max_length=128)
     body = models.TextField()
