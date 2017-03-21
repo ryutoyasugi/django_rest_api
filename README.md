@@ -9,7 +9,7 @@
 
 ```sh
 python -V # 3.5.3
-pip install django djangorestframework
+pip install django djangorestframework django-filter
 django-admin startproject django_rest_api && cd django_rest_api
 python manage.py migrate
 python manage.py createsuperuser
